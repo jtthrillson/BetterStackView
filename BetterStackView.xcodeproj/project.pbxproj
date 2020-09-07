@@ -10,6 +10,7 @@
 		DE2FD2F32493B5390040EE5E /* BetterStackView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2FD2E92493B5390040EE5E /* BetterStackView.framework */; };
 		DE2FD2F82493B5390040EE5E /* BetterStackViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2FD2F72493B5390040EE5E /* BetterStackViewTests.swift */; };
 		DE2FD2FA2493B5390040EE5E /* BetterStackView.h in Headers */ = {isa = PBXBuildFile; fileRef = DE2FD2EC2493B5390040EE5E /* BetterStackView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE2FD3042493B5590040EE5E /* BetterStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2FD3032493B5590040EE5E /* BetterStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		DE2FD2F22493B5390040EE5E /* BetterStackViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetterStackViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE2FD2F72493B5390040EE5E /* BetterStackViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterStackViewTests.swift; sourceTree = "<group>"; };
 		DE2FD2F92493B5390040EE5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE2FD3032493B5590040EE5E /* BetterStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				DE2FD2EC2493B5390040EE5E /* BetterStackView.h */,
+				DE2FD3032493B5590040EE5E /* BetterStackView.swift */,
 				DE2FD2ED2493B5390040EE5E /* Info.plist */,
 			);
 			path = BetterStackView;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					DE2FD2E82493B5390040EE5E = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 					DE2FD2F12493B5390040EE5E = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE2FD3042493B5590040EE5E /* BetterStackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		DE2FD2FE2493B5390040EE5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 53NT4DR7Q6;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dangerbarrel.BetterStackView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		DE2FD2FF2493B5390040EE5E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 53NT4DR7Q6;
@@ -388,6 +396,7 @@
 		DE2FD3012493B5390040EE5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53NT4DR7Q6;
 				INFOPLIST_FILE = BetterStackViewTests/Info.plist;
@@ -406,6 +415,7 @@
 		DE2FD3022493B5390040EE5E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53NT4DR7Q6;
 				INFOPLIST_FILE = BetterStackViewTests/Info.plist;
